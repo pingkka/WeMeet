@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.friend">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Calendar_main"></activity>
+        <activity android:name=".Calender_edit"></activity>
+        <activity android:name=".Calendar_add" />
+        <activity android:name=".Calendar_popup"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity android:name=".InformLocationMap"></activity>
+        <activity android:name=".InformLocation" />
+        <activity android:name=".CalcLocation" />
+        <activity android:name=".MemberPosition" />
+        <activity android:name=".SetLocationCenter" />
+        <activity android:name=".SetLocationPick" />
+        <activity android:name=".SetScheduleCalender" />
+        <activity android:name=".AddNewScheduleActivity" />
+        <activity android:name=".ScheduleMainActivity"></activity>
+        <activity android:name=".ScheduleMainHome" />
+
+        <activity android:name=".FriendSearchActivity" />
+        <activity android:name=".FriendRequestActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="5ac37e8714e21480df0084efe284e09e" />
+    </application>
+
+
+
+</manifest>
